@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Nav ></Nav> 
+   <!--  <v-nav res="nav"></v-nav>   -->
   </div>
 </template>
 
 <script>
+import Nav from "./components/nav/Nav";
+/*import vNav from "./components/nav/vNav";*/
 export default {
-  name: 'App'
+  name: 'App',
+components: {
+   Nav,
+ /* vNav,*/
+ 
+  },
 }
 </script>
 
